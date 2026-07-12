@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stochast — Independent Market Analysis by Juan Carlos Baya</title>
+  <meta name="description" content="Independent, concise research on equities, commodities and digital assets. Personal market views by Juan Carlos Baya." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">Stochast<span class="brand-dot">.</span></a>
+      <nav class="nav">
+        <a href="#research" data-i18n="nav_research">Research</a>
+        <a href="#about" class="nav-link-about" data-i18n="nav_about">About</a>
+        <a href="#contact" class="nav-link-contact" data-i18n="nav_contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">ES</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <canvas id="paths-canvas" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-inner">
+        <div class="hero-greek">στοχαστής</div>
+        <h1 data-i18n="hero_title">Aiming with method at an uncertain target.</h1>
+        <p class="etym" data-i18n="hero_etym">From the Greek stochastēs — one who conjectures with skill. Independent, concise analysis of global markets: equities, commodities and digital assets.</p>
+        <p class="byline" data-i18n="hero_byline">Market analysis by <strong>Juan Carlos Baya</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section-label" data-i18n="research_label">Research Notes</div>
+      <h2 class="section-title" data-i18n="research_title">Latest views</h2>
+      <ul class="post-list" id="postList"></ul>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-label" data-i18n="about_label">The Analyst</div>
+      <div class="about-grid">
+        <div class="photo-frame">
+          <img src="assets/img/portrait_bw.jpg" alt="Juan Carlos Baya" class="about-photo" />
+        </div>
+        <div class="about-text">
+          <div class="about-name">Juan Carlos Baya</div>
+          <div class="about-role" data-i18n="about_role">Independent Market Analyst</div>
+          <div id="bioContainer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-label" data-i18n="contact_label">Contact</div>
+      <h2 class="section-title" data-i18n="contact_title">Work with me</h2>
+      <div class="contact-box">
+        <p data-i18n="contact_text">If you manage a fund or portfolio and would like independent, direct market views — or a second opinion on your current positioning — I am available for advisory engagements and bespoke research.</p>
+        <a class="contact-email" href="mailto:juancarlosbaya@protonmail.com">juancarlosbaya@protonmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclaimer" data-i18n="disclaimer">
+        <strong>Disclaimer.</strong> All writings and content published on this site reflect the personal views and analysis of Juan Carlos Baya and in no way constitute investment advice, an offer, or a recommendation to buy or sell any security or financial instrument. Readers should conduct their own research and consult a licensed financial advisor before making any investment decision.
+      </p>
+      <div class="footer-base">
+        <span>© <span id="year"></span> Stochast — Juan Carlos Baya</span>
+        <span data-i18n="footer_tag">Independent market analysis</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
